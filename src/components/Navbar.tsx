@@ -36,7 +36,7 @@ const Navbar = () => {
           <img 
             src={pisonLogo} 
             alt="Pison Group Logo" 
-            className={`h-10 w-auto transition-all ${
+            className={`h-8 w-auto transition-all ${
               isScrolled ? "" : "brightness-0 invert"
             }`}
           />
