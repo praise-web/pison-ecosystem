@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import pisonLogo from "@/assets/pison-logo.png";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -31,15 +32,14 @@ const Navbar = () => {
     >
       <div className="container-wide flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-xl">P</span>
-          </div>
-          <span className={`font-heading font-bold text-xl transition-colors ${
-            isScrolled ? "text-foreground" : "text-primary-foreground"
-          }`}>
-            PISON
-          </span>
+        <a href="#" className="flex items-center">
+          <img 
+            src={pisonLogo} 
+            alt="Pison Group Logo" 
+            className={`h-10 w-auto transition-all ${
+              isScrolled ? "" : "brightness-0 invert"
+            }`}
+          />
         </a>
 
         {/* Desktop Navigation */}

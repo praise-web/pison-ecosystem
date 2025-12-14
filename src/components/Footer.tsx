@@ -1,3 +1,5 @@
+import pisonLogo from "@/assets/pison-logo.png";
+
 const ecosystemLinks = [
   { name: "Leadership Academy", href: "#" },
   { name: "Content Design Institute", href: "#" },
@@ -19,11 +21,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">P</span>
-              </div>
-              <span className="font-heading font-bold text-xl">PISON</span>
+            <div className="mb-6">
+              <img 
+                src={pisonLogo} 
+                alt="Pison Group Logo" 
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed">
               Unlocking human potential. Building systems. Shaping Africa's future.
