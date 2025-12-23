@@ -9,7 +9,7 @@ import teamGroup from "@/assets/team-group-2.jpg";
 const ecosystemTags = [
   { name: "Leadership", icon: GraduationCap, href: "/ecosystem" },
   { name: "Content Design", icon: Palette, href: "/ecosystem" },
-  { name: "Careers", icon: Briefcase, href: "/ecosystem" },
+  { name: "Careers", icon: Briefcase, href: "https:/careers.thepisongroup.com/" },
   { name: "Branding", icon: Megaphone, href: "/ecosystem" },
   { name: "Research", icon: FlaskConical, href: "/ecosystem" },
 ];
