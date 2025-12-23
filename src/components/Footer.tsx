@@ -4,13 +4,14 @@ import pisonLogo from "@/assets/pison-logo.png";
 const ecosystemLinks = [
   { name: "Leadership Academy", href: "/ecosystem" },
   { name: "Content Design Institute", href: "/ecosystem" },
-  { name: "Pison Careers", href: "/ecosystem" },
+  { name: "Pison Careers", href: "https://careers.thepisongroup.com/" },
   { name: "Pinnacle Agency", href: "/ecosystem" },
   { name: "Research & Resource", href: "/ecosystem" },
 ];
 
 const companyLinks = [
   { name: "About Us", href: "/about" },
+  { name: "Ecosystem", href: "/ecosystem" },
   { name: "Why Pison", href: "/why-pison" },
   { name: "Contact", href: "/contact" },
 ];
