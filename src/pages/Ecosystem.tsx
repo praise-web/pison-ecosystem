@@ -222,10 +222,19 @@ const Ecosystem = () => {
                     </div>
 
                     {/* Link */}
-                    <Button variant="ghost" size="sm" className="group/btn p-0 h-auto">
-                      <span className="text-primary font-semibold">Learn More</span>
-                      <ArrowRight className="w-4 h-4 text-primary transition-transform group-hover/btn:translate-x-1" />
-                    </Button>
+                    {unit.id === "careers" ? (
+                      <a href="https://careers.thepisongroup.com/" target="_blank" rel="noopener noreferrer">
+                        <Button variant="ghost" size="sm" className="group/btn p-0 h-auto">
+                          <span className="text-primary font-semibold">Learn More</span>
+                          <ExternalLink className="w-4 h-4 text-primary transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+                        </Button>
+                      </a>
+                    ) : (
+                      <Button variant="ghost" size="sm" className="group/btn p-0 h-auto">
+                        <span className="text-primary font-semibold">Learn More</span>
+                        <ArrowRight className="w-4 h-4 text-primary transition-transform group-hover/btn:translate-x-1" />
+                      </Button>
+                    )}
                   </div>
                 ))}
               </div>
