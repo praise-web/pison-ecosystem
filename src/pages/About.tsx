@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import teamMember1 from "@/assets/team-member-1.jpg";
 import teamMember2 from "@/assets/team-member-2.jpg";
 import teamLeaders from "@/assets/team-leaders.jpg";
-import teamGroup from "@/assets/team-group.jpg";
+import teamGroup from "@/assets/team-group-2.jpg";
 
 const values = [
   { icon: Eye, text: "See potential where others see scarcity", label: "Vision" },
