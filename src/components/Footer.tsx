@@ -13,6 +13,7 @@ const companyLinks = [
   { name: "About Us", href: "/about" },
   { name: "Ecosystem", href: "/ecosystem" },
   { name: "Why Pison", href: "/why-pison" },
+  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
