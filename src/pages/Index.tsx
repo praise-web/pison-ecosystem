@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, GraduationCap, Palette, Briefcase, Megaphone, FlaskConical } from "lucide-react";
-import teamGroup from "@/assets/team-group.jpg";
+import teamGroup from "@/assets/team-group-2.jpg";
 
 const ecosystemTags = [
   { name: "Leadership", icon: GraduationCap, href: "/ecosystem" },
