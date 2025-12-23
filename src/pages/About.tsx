@@ -102,26 +102,28 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up stagger-1">
-                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500">
-                  <img 
-                    src={teamMember1} 
-                    alt="Pison Group Team Member" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="flex flex-col md:flex-row gap-6 animate-fade-up stagger-1">
+                <div className="flex flex-col md:flex-row gap-6 md:w-1/2">
+                  <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 flex-1">
+                    <img 
+                      src={teamMember1} 
+                      alt="Pison Group Team Member" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
+                  
+                  <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 flex-1">
+                    <img 
+                      src={teamMember2} 
+                      alt="Pison Group Team Member" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500">
-                  <img 
-                    src={teamMember2} 
-                    alt="Pison Group Team Member" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                
-                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500 md:col-span-2">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 md:w-1/2 min-h-[400px]">
                   <img 
                     src={teamLeaders} 
                     alt="Pison Group Leadership Team" 
