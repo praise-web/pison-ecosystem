@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Ecosystem from "./pages/Ecosystem";
 import WhyPison from "./pages/WhyPison";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/ecosystem" element={<Ecosystem />} />
           <Route path="/why-pison" element={<WhyPison />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
