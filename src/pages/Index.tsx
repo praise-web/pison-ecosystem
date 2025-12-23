@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, GraduationCap, Palette, Briefcase, Megaphone, FlaskConical } from "lucide-react";
+import teamGroup from "@/assets/team-group.jpg";
 
 const ecosystemTags = [
   { name: "Leadership", icon: GraduationCap, href: "/ecosystem" },
@@ -140,17 +141,30 @@ const Index = () => {
                   </Link>
                 </div>
                 
-                <div className="grid grid-cols-3 gap-4 animate-fade-up stagger-2">
-                  {[
-                    { value: "5+", label: "Ecosystem Arms" },
-                    { value: "1000+", label: "Lives Impacted" },
-                    { value: "10+", label: "Programs" },
-                  ].map((stat, i) => (
-                    <div key={i} className="text-center p-6 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium hover:-translate-y-1 transition-all duration-300">
-                      <div className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">{stat.value}</div>
-                      <div className="text-muted-foreground text-sm">{stat.label}</div>
-                    </div>
-                  ))}
+                <div className="space-y-6 animate-fade-up stagger-2">
+                  {/* Team Image */}
+                  <div className="relative overflow-hidden rounded-3xl aspect-[4/3] shadow-strong group">
+                    <img 
+                      src={teamGroup} 
+                      alt="Pison Group Team" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 via-transparent to-transparent" />
+                  </div>
+                  
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-4">
+                    {[
+                      { value: "5+", label: "Ecosystem Arms" },
+                      { value: "1000+", label: "Lives Impacted" },
+                      { value: "10+", label: "Programs" },
+                    ].map((stat, i) => (
+                      <div key={i} className="text-center p-4 bg-card rounded-2xl shadow-soft border border-border hover:shadow-medium hover:-translate-y-1 transition-all duration-300">
+                        <div className="text-2xl md:text-3xl font-heading font-bold text-primary mb-1">{stat.value}</div>
+                        <div className="text-muted-foreground text-xs">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

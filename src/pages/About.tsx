@@ -4,6 +4,10 @@ import Footer from "@/components/Footer";
 import { Quote, Target, Eye, Lightbulb, Users, Sparkles, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import teamMember1 from "@/assets/team-member-1.jpg";
+import teamMember2 from "@/assets/team-member-2.jpg";
+import teamLeaders from "@/assets/team-leaders.jpg";
+import teamGroup from "@/assets/team-group.jpg";
 
 const values = [
   { icon: Eye, text: "See potential where others see scarcity", label: "Vision" },
@@ -78,6 +82,67 @@ const About = () => {
                     <Quote className="w-12 h-12 text-accent mb-6 relative z-10" />
                     <p className="text-2xl md:text-3xl font-heading font-bold italic leading-relaxed relative z-10">
                       At Pison, we do not simply provide services; we build people, we build solutions, and we build systems that make progress sustainable.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Team Section */}
+          <section className="section-padding bg-background">
+            <div className="container-wide">
+              <div className="text-center mb-16 animate-fade-up">
+                <span className="section-badge mb-6">Our Team</span>
+                <h2 className="section-title">
+                  Meet the <span className="gradient-text">Visionaries</span>
+                </h2>
+                <p className="section-subtitle max-w-2xl mx-auto">
+                  The passionate individuals driving Africa's transformation through innovation and dedication.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-up stagger-1">
+                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500">
+                  <img 
+                    src={teamMember1} 
+                    alt="Pison Group Team Member" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500">
+                  <img 
+                    src={teamMember2} 
+                    alt="Pison Group Team Member" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-medium hover:shadow-strong transition-all duration-500 md:col-span-2">
+                  <img 
+                    src={teamLeaders} 
+                    alt="Pison Group Leadership Team" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+              </div>
+              
+              {/* Team Group Photo */}
+              <div className="mt-8 animate-fade-up stagger-2">
+                <div className="group relative overflow-hidden rounded-3xl aspect-[21/9] shadow-strong">
+                  <img 
+                    src={teamGroup} 
+                    alt="Pison Group Team" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                    <p className="text-white text-xl md:text-2xl font-heading font-semibold">
+                      Building Africa's Future, Together
                     </p>
                   </div>
                 </div>
