@@ -5,7 +5,7 @@ import { Quote, Target, Eye, Lightbulb, Users, Sparkles, ArrowRight } from "luci
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import teamMember1 from "@/assets/team-member-1.jpg";
-import teamMember2 from "@/assets/team-member-2.jpg";
+import teamMember2 from "@/assets/team-member-new.jpg";
 import teamLeaders from "@/assets/team-leaders.jpg";
 import teamGroup from "@/assets/team-group-2.jpg";
 
