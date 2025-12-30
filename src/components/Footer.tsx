@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Instagram, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import pisonLogo from "@/assets/pison-logo.png";
 
 const ecosystemLinks = [
@@ -17,6 +18,14 @@ const companyLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+const socialLinks = [
+  { name: "Instagram", href: "https://www.instagram.com/the.pisongroup", icon: Instagram },
+  { name: "Facebook", href: "https://facebook.com/pisonbooks", icon: Facebook },
+  { name: "X", href: "https://x.com/pison_group", icon: Twitter },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/pison-group/", icon: Linkedin },
+  { name: "YouTube", href: "https://youtube.com/@pisongroup", icon: Youtube },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground">
@@ -30,9 +39,23 @@ const Footer = () => {
                 className="h-10 w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-secondary-foreground/70 text-sm leading-relaxed">
+            <p className="text-secondary-foreground/70 text-sm leading-relaxed mb-6">
               Unlocking human potential. Building systems. Shaping Africa's future.
             </p>
+            <div className="flex gap-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.name}
+                  className="text-secondary-foreground/70 hover:text-accent transition-colors"
+                >
+                  <social.icon className="w-5 h-5" />
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>
