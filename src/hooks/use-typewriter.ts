@@ -46,5 +46,5 @@ export const useTypewriter = ({
     return () => clearTimeout(timeout);
   }, [displayText, isTyping, phraseIndex, phrases, typingSpeed, deletingSpeed, pauseDuration]);
 
-  return { displayText, isTyping };
+  return { displayText, isTyping, currentPhraseIndex: phraseIndex };
 };
