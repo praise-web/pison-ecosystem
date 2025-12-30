@@ -3,18 +3,21 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { useTypewriter } from "@/hooks/use-typewriter";
 
 const phrases = [
-  "Unlocking human potential.",
-  "Building systems.",
-  "Shaping Africa's future.",
+  { text: "Unlocking human potential.", isAccent: false },
+  { text: "Building systems.", isAccent: true },
+  { text: "Shaping Africa's future.", isAccent: false },
 ];
 
 const HeroSection = () => {
-  const { displayText } = useTypewriter({
-    phrases,
+  const { displayText, currentPhraseIndex } = useTypewriter({
+    phrases: phrases.map(p => p.text),
     typingSpeed: 80,
     deletingSpeed: 40,
     pauseDuration: 2500,
   });
+
+  const currentPhrase = phrases[currentPhraseIndex];
+  const isAccentPhrase = currentPhrase?.isAccent;
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: 'var(--gradient-hero)' }}>
@@ -43,8 +46,8 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading with Typewriter Effect */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1 min-h-[1.2em]">
-            <span>{displayText}</span>
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1 min-h-[2.4em] md:min-h-[1.4em]">
+            <span className={isAccentPhrase ? "text-accent italic" : ""}>{displayText}</span>
             <span className="inline-block w-[3px] h-[0.9em] bg-accent ml-1 animate-pulse" />
           </h1>
 
