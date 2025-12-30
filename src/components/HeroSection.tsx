@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useTypewriter } from "@/hooks/use-typewriter";
+import { Link } from "react-router-dom";
 
 const phrases = [
   { text: "Unlocking human potential.", isAccent: false },
@@ -60,9 +61,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up stagger-3">
-            <Button variant="gold" size="xl" className="group">
-              Explore the Ecosystem
-              <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="gold" size="xl" className="group" asChild>
+              <Link to="/ecosystem">
+                Explore the Ecosystem
+                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+              </Link>
             </Button>
             <Button variant="heroOutline" size="xl">
               Learn More
