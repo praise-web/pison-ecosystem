@@ -46,10 +46,12 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading with Typewriter Effect */}
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1 min-h-[2.4em] md:min-h-[1.4em]">
-            <span className={isAccentPhrase ? "text-accent italic" : ""}>{displayText}</span>
-            <span className="inline-block w-[3px] h-[0.9em] bg-accent ml-1 animate-pulse" />
-          </h1>
+          <div className="lg:w-[700px]">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1">
+              <span className={isAccentPhrase ? "text-accent italic" : ""}>{displayText}</span>
+              <span className="inline-block w-[3px] h-[0.9em] bg-accent ml-1 animate-pulse" />
+            </h1>
+          </div>
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mb-10 leading-relaxed animate-fade-up stagger-2">
