@@ -46,7 +46,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Heading with Typewriter Effect */}
-          <div className="lg:w-[700px]">
+          <div className="lg:w-[900px]">
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up stagger-1">
               <span className={isAccentPhrase ? "text-accent italic" : ""}>{displayText}</span>
               <span className="inline-block w-[3px] h-[0.9em] bg-accent ml-1 animate-pulse" />
