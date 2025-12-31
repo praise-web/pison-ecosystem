@@ -103,31 +103,43 @@ const About = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up stagger-1">
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
                   <img 
                     src={teamMember1} 
-                    alt="Pison Group Team Member" 
+                    alt="Fidelis Aladesiun" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-heading font-bold text-xl mb-1">Fidelis Aladesiun</h3>
+                    <p className="text-white/80 text-sm">Founder & Chief Executive Officer, Pison Group.</p>
+                  </div>
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
                   <img 
                     src={teamMember2} 
-                    alt="Pison Group Team Member" 
+                    alt="Ayoola Akinwumi" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-heading font-bold text-xl mb-1">Ayoola Akinwumi</h3>
+                    <p className="text-white/80 text-sm">Co-founder & Managing Partner, Pison Leadership Academy</p>
+                  </div>
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
                   <img 
                     src={teamMember5} 
-                    alt="Pison Group Team Member" 
+                    alt="Opeyemi Abolade" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/95 via-secondary/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-white font-heading font-bold text-xl mb-1">Opeyemi Abolade</h3>
+                    <p className="text-white/80 text-sm">Co-Founder & Director of Finance, Strategy and Sustainability, Pison Group.</p>
+                  </div>
                 </div>
               </div>
               
