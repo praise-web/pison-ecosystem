@@ -103,7 +103,7 @@ const About = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up stagger-1">
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[1/2]">
                   <img 
                     src={teamMember1} 
                     alt="Fidelis Aladesiun" 
@@ -116,7 +116,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[1/2]">
                   <img 
                     src={teamMember2} 
                     alt="Ayoola Akinwumi" 
@@ -129,7 +129,7 @@ const About = () => {
                   </div>
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[2/3]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[1/2]">
                   <img 
                     src={teamMember5} 
                     alt="Opeyemi Abolade" 
