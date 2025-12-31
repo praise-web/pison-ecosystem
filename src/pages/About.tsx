@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import teamMember1 from "@/assets/team-member-1.jpg";
 import teamMember2 from "@/assets/team-member-new.jpg";
-import teamLeaders from "@/assets/team-leaders.jpg";
+import teamMember5 from "@/assets/team-member-5.jpg";
 import teamGroup from "@/assets/team-group-2.jpg";
 
 const values = [
@@ -102,31 +102,29 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="flex flex-col md:flex-row gap-6 animate-fade-up stagger-1">
-                <div className="flex flex-col md:flex-row gap-6 md:w-1/2">
-                  <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 flex-1">
-                    <img 
-                      src={teamMember1} 
-                      alt="Pison Group Team Member" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </div>
-                  
-                  <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 flex-1">
-                    <img 
-                      src={teamMember2} 
-                      alt="Pison Group Team Member" 
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 animate-fade-up stagger-1">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
+                  <img 
+                    src={teamMember1} 
+                    alt="Pison Group Team Member" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
                 
-                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 md:w-1/2 min-h-[400px]">
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
                   <img 
-                    src={teamLeaders} 
-                    alt="Pison Group Leadership Team" 
+                    src={teamMember2} 
+                    alt="Pison Group Team Member" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
+                
+                <div className="group relative overflow-hidden rounded-2xl shadow-medium hover:shadow-strong transition-all duration-500 aspect-[3/4]">
+                  <img 
+                    src={teamMember5} 
+                    alt="Pison Group Team Member" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
