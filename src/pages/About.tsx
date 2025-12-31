@@ -95,7 +95,7 @@ const About = () => {
               <div className="text-center mb-16 animate-fade-up">
                 <span className="section-badge mb-6">Our Team</span>
                 <h2 className="section-title">
-                  Meet the <span className="gradient-text">Visionaries</span>
+                  Executive <span className="gradient-text">Leadership.</span>
                 </h2>
                 <p className="section-subtitle max-w-2xl mx-auto">
                   The passionate individuals driving Africa's transformation through innovation and dedication.
