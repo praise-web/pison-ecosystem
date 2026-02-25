@@ -53,7 +53,7 @@ const Recruitment = () => {
             <div className="container-wide">
               <div className="w-full rounded-2xl overflow-hidden shadow-xl border border-border">
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSdKzVBSyMxLxBqiH5VrX-_IRUV0sNQf2g7TGF0wt3MjPWMuPA/viewform?embedded=true"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSfDqHxBdMHji3uy6AJvOmlAOmG8LtMnpHNj_FcKmqPe7nXd5A/viewform?embedded=true"
                   width="100%"
                   height="1200"
                   frameBorder="0"
