@@ -9,6 +9,7 @@ const navLinks = [
   { name: "Ecosystem", href: "/ecosystem" },
   { name: "Why Pison", href: "/why-pison" },
   { name: "Blog", href: "/blog" },
+  { name: "Recruitment", href: "/recruitment" },
   { name: "Contact", href: "/contact" },
 ];
 
