@@ -55,7 +55,7 @@ const Recruitment = () => {
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSdN14HdClrdV3IENHAsBRRvDN6tGl3ZqFEo1dc_BvZyAe5HsQ/viewform?embedded=true"
                   width="100%"
-                  height="1200"
+                  height="800"
                   frameBorder="0"
                   marginHeight={0}
                   marginWidth={0}
